@@ -155,6 +155,10 @@ img {
   margin-bottom: 72px;
   
 }
+.customers-logo-list {
+  border-radius: 4px;
+  fill: currentColor;
+}
 .subscribe {
   color: var(--white);
   font-size: 16px;
@@ -510,6 +514,12 @@ h3 {font-family: Roboto;
   justify-content: space-between;
   height: 72px;
 }
+.customers-logo-list {
+  border-radius: 4px;
+  fill: currentColor;
+  
+
+}
 
 .header-main-page {
   border-bottom: 1px solid #e7e9fc;
@@ -643,10 +653,6 @@ h3 {font-family: Roboto;
 }
 .header-customers {
   margin-bottom: 72px;
-}
-.customers-logo-list {
-  border-radius: 4px;
-  fill: currentColor;
 }
 .vector-team-socials {
   fill: var(--cloud);
@@ -1379,10 +1385,7 @@ color: var(--iris);
 .header-customers {
   margin-bottom: 72px;
 }
-.customers-logo-list {
-  border-radius: 4px;
-  fill: currentColor;
-}
+
 .vector-team-socials {
   fill: var(--cloud);
 }
