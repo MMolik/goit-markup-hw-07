@@ -421,6 +421,16 @@ h3 {font-family: Roboto;
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) 
+  {.section-main {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office@2x.jpg);
+  }
 
 .head-first-tag {
   font-size: 36px;
@@ -1193,7 +1203,7 @@ outline: none;
   overflow-y: auto;
   transform: translateY(100%);
   transition: transform 250ms ease-in-out;} 
-  
+
   .modal-hamburger-window.is-open {
     transform: translateY(100%);
   }
@@ -1256,7 +1266,7 @@ outline: none;
     }
  
 
-  
+  }
 /*============================ NOT DESKTOP=============================== */
 @media screen and (max-width: 1199px)
   {
