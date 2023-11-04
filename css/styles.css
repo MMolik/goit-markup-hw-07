@@ -166,6 +166,12 @@ img {
   border-radius: 4px;
   fill: currentColor;
 }
+.address-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
 .footer-logo {
   margin-right: 120px;
@@ -251,6 +257,23 @@ img {
   max-width: 496px;
   margin: auto;
 }
+.menu-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.logo-nav {
+  color: var(--iris);
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 76px;
+  display: inline-block;
+}
 .main-icons-container {
   display: flex;
   justify-content: center;
@@ -333,6 +356,7 @@ h3 {font-family: Roboto;
   display: inline-block;
   margin-left: 80px;
 }
+
 
 .button:visited {
   color: #404bbf;}
@@ -492,7 +516,7 @@ h3 {font-family: Roboto;
 }
 
 .menu-list {
-  display: flex;
+  display: none;
   justify-content: flex-start;
   gap: 40px;
 }
@@ -514,7 +538,7 @@ h3 {font-family: Roboto;
 }
 
 .address-list {
-  display: flex;
+  display: none;
   gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -523,12 +547,15 @@ h3 {font-family: Roboto;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .header-cointainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 72px;
+  width: auto;
 }
 .customers-logo-list {
   border-radius: 4px;
@@ -612,8 +639,8 @@ h3 {font-family: Roboto;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 76px;
   display: inline-block;
+  margin: 0;
 }
 .team-socials {
   display: flex;
@@ -1118,7 +1145,7 @@ color: var(--iris);
 /*============================ TABLET=============================== */
 @media screen and (min-width: 768px)
   {
-
+.hamburger {display: none;}
 
   }
 /*============================ NOT DESKTOP=============================== */
@@ -1269,11 +1296,7 @@ color: var(--iris);
   margin-bottom: 8px;
 }
 
-.menu-list {
-  display: flex;
-  justify-content: flex-start;
-  gap: 40px;
-}
+
 
 .list-main-section-porfolio {
   display: flex;
@@ -1285,12 +1308,7 @@ color: var(--iris);
   gap: 24px;
 }
 
-.address-list {
-  display: flex;
-  gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -1361,18 +1379,7 @@ color: var(--iris);
   border-top: none;
 }
 
-.logo-nav {
-  color: var(--iris);
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-right: 76px;
-  display: inline-block;
-}
+
 .team-socials {
   display: flex;
   gap: 24px;
