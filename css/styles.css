@@ -1261,12 +1261,80 @@ outline: none;
 
 /*============================ TABLET=============================== */
 @media screen and (min-width: 768px)
-  {
+  {.container {
+    width: 768px;
+    margin-left: 0;
+  }
     .menu-toggle {
       display: none;
     }
- 
-
+    .main-icons-container {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8px;
+      height: 112px;
+      background-color: var(--cloud);
+      border-radius: 4px;
+    }
+.header-cointainer{
+  width: 100%;
+}
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.head-three-tag {
+  color: var(--dark);
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  word-wrap: break-word;
+  text-align: left;
+  margin-bottom: 8px;
+  
+}
+.paragraph {
+  line-height: 1.5;
+  color: var(--slate);
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  word-wrap: break-word;
+  box-sizing: content-box;
+  text-align: left;
+  align-self: stretch;
+}
+.list-strategy {
+  flex-wrap: wrap;
+}
+.list-strategy-items { 
+  width: 356px;
+}
+.images-section {
+  padding-bottom: 120px;
+  display: none;
+}
+.section-main {
+  width: 100%;
+}
+.main-page-section-two {
+  width: 100%;
+}
+.team-list {
+  width: 264px;
+}
+.list-team {
+  display: flex;
+  gap: 24px;
+flex-wrap: wrap;
+}
   }
 /*============================ NOT DESKTOP=============================== */
 @media screen and (max-width: 1199px)
