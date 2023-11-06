@@ -49,20 +49,15 @@
             </li>
             <li><a class="list-first link" href="">Contacts</a></li>
           </ul>
-          <div class="js-menu-container">
-          
-              <button
-                type="button"
-                class="button-hamburger menu-toggle js-open-menu"
-                aria-expanded="false"
-                aria-controls="mobile-menu"
-              >
-                <svg width="32" height="22">
-                  <use href="./images/icons.svg#charm:menu-hamburger"></use>
-                </svg>
-              </button>
-           
-          </div>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#charm:menu-hamburger"></use>
+            </svg>
+          </button>
         </nav>
         <address class="address nav-list">
           <ul class="list link address-list">
@@ -408,6 +403,82 @@
         </div>
       </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div>
+        <nav>
+          <ul class="mobile-menu">
+            <li>
+              <a class="list-first link link-active" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="list-first link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="list-first link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <address class="address nav-list">
+        <ul class="list link address-list">
+          <li class="container-header-address-list-item">
+            <a class="contact list link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact list link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+        <ul class="team-socials">
+          <li class="team-socials-items">
+            <a href="#" class="team-socials-link">
+              <svg width="16" height="16" class="vector-team-socials">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-socials-items">
+            <a href="#" class="team-socials-link">
+              <svg width="16" height="16" class="vector-team-socials">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-socials-items">
+            <a href="#" class="team-socials-link">
+              <svg width="16" height="16" class="vector-team-socials">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-socials-items">
+            <a href="#" class="team-socials-link">
+              <svg width="16" height="16" class="vector-team-socials">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+    </div>
     <footer class="footer">
       <div class="container footer-main-container">
         <div class="footer-logo">
@@ -562,6 +633,7 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
     <script
       defer

@@ -48,6 +48,7 @@ img {
   height: auto;
 }
 
+
 .link {
   text-decoration: none;
   display: block;
@@ -301,6 +302,11 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;}
 /*============================ MOBILE=============================== */
 @media screen and (max-width: 767px) 
 {
@@ -539,7 +545,7 @@ h3 {font-family: Roboto;
   justify-content: center;
 }
 .list-images {
-  display: flex;
+  display: none;
   gap: 24px;
 }
 .list-team {
@@ -1158,6 +1164,9 @@ color: var(--iris);
   display: none;
 }
 /*------------------------- Hamburger------------------------------ */
+.menu {
+  display: none;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -1194,47 +1203,92 @@ body {
   list-style: none;
 }
 
-.menu {
-  display: none;
-}
-}
 
 .menu .link {
-padding: 10px;
-color: inherit;
-text-decoration: none;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .menu .link:hover,
 .menu .link:focus {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .menu-toggle {
-min-height: 40px;
-min-width: 40px;
-display: flex;
-align-items: center;
-justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-margin: 0;
-padding: 0;
-background-color: transparent;
-cursor: pointer;
-border: none;
-border-radius: 50%;
-outline: none;
-}
+  margin: 0;
+  padding: 0;
+  background-color: transprearent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+  
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+  }}
 /*============================ TABLET=============================== */
 @media screen and (min-width: 768px)
-  {.container {
+  {
+    .container {
     width: 100%;
     margin-left: 0;
 
   }
     .menu-toggle {
+      display: none;
+    }
+    .mobile-menu {
       display: none;
     }
     .main-icons-container {
@@ -1361,8 +1415,7 @@ margin-left: 108px;
 /* @media screen and (max-width: 1199px)
   { */
 /*============================ DESKTOP=============================== */
-@media screen and (min-width: 1200px)
-  {
+@media screen and (min-width: 1200px) {
 .container {
   width: 100%;
   }
@@ -1420,7 +1473,14 @@ margin-left: 108px;
         row-gap: 72px;
         gap: 80px;
       }
+      .images-section {
+        padding-bottom: 120px;
+        display: flex;
+        margin: auto;
+      }
+
   }
+
 
 
 
@@ -1574,6 +1634,7 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 .header-cointainer {
   display: flex;
@@ -1587,11 +1648,7 @@ justify-content: center;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.images-section {
-  padding-bottom: 120px;
-  display: flex;
-  margin: auto;
-}
+
 
 
 .main-page-section-two {
