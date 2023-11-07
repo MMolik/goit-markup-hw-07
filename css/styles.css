@@ -174,9 +174,7 @@ img {
   padding-bottom: 24px;
 }
 
-.footer-logo {
-  margin-right: 120px;
-}
+
 .button-subscribe {
   color:white;
   background-color: var(--iris);
@@ -297,7 +295,7 @@ img {
   overflow: hidden;
 }
 .container {
-  width: 1158px;
+  max-width: 428px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -1224,7 +1222,7 @@ body {
 
   margin: 0;
   padding: 0;
-  background-color: transprearent;
+  background-color: white;
   cursor: pointer;
   border: none;
   border-radius: 50%;
@@ -1234,7 +1232,11 @@ body {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  
+
+}
+.menu-close-button {
+border-color: rebeccapurple;
 }
 
 .menu-container {
@@ -1253,6 +1255,7 @@ body {
 
 .menu-container.is-open {
   transform: translateX(0);
+  background-color: white;
 }
 
 .menu-container .menu-toggle {
@@ -1267,22 +1270,72 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  padding-top: 24px;
+  padding-left: 8px;
+  margin-bottom: 150px;
+
 }
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
-  color: #fff;
+  color: var(--dark)
   text-decoration: none;
+
+/* Header 2 */
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+  
+}
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 428px;
+}
+.team-socials-menu {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  list-style: none;
+}
+.menu-email {
+  color: var(--main-text-color);
+  text-align: center;
+
+/* Header 3 */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 120% */
+letter-spacing: 0.4px;
+}
+.menu-tel {
+  color: var(--iris);
+  text-align: center;
 }
 
-  }}
+/* Header 2 */
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+}
+
+  }
 /*============================ TABLET=============================== */
 @media screen and (min-width: 768px)
   {
     .container {
-    width: 100%;
-    margin-left: 0;
+    max-width: 768px;
+    margin: 0 auto;
 
   }
     .menu-toggle {
@@ -1322,6 +1375,9 @@ body {
   margin-bottom: 8px;
   
 }
+.nav-list {
+  display: none;}
+
 .paragraph {
   line-height: 1.5;
   color: var(--slate);
@@ -1345,7 +1401,7 @@ body {
   display: none;
 }
 .section-main {
-  width: 100%;
+  
 }
 .main-page-section-two {
   width: 100%;
@@ -1357,7 +1413,7 @@ body {
   display: flex;
   gap: 24px;
 flex-wrap: wrap;
-margin-left: 108px;
+justify-content: center;
 }
 .head-first-tag {
   font-size: 56px;
@@ -1382,18 +1438,13 @@ margin-left: 108px;
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.footer {
-  width: 768px;
-}
-.footer-logo {
-  margin-left: 108px;
-  margin-right: 24px;
-  }
+
   .footer-main-container {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    row-gap: 72px;
+    justify-content: center;
+    padding-top: 96px;
   }
   .subscribe {
     color: var(--white);
@@ -1405,19 +1456,33 @@ margin-left: 108px;
     word-wrap: break-word;
     margin-bottom: 16px;
     padding-top: 72px;
-    margin-left: 93px;
   }
   .footer-input-email {
-    margin-left: 93px;
+    background-color: inherit;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 24px;
+    border-radius: 4px;
+  border: 1px solid var(--WHITE, #FFF);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: white;
   }
+
   }
 /*============================ NOT DESKTOP=============================== */
 /* @media screen and (max-width: 1199px)
   { */
 /*============================ DESKTOP=============================== */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
 .container {
-  width: 100%;
+  max-width: 1158px;
   }
   .list-strategy {
     display: flex;
@@ -1432,7 +1497,7 @@ margin-left: 108px;
       gap: 40px;
       padding-top: 24px;
       padding-bottom: 24px;
-      margin-right: 100px;
+      
     }
     .main-icons-container {
       display: flex;
@@ -1469,9 +1534,11 @@ margin-left: 108px;
       .footer-main-container {
         display: flex;
         align-items: baseline;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         row-gap: 72px;
         gap: 80px;
+        justify-content: center;
+      
       }
       .images-section {
         padding-bottom: 120px;
