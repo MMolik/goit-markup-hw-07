@@ -599,8 +599,7 @@ h3 {font-family: Roboto;
 }
 .main-page-section-two {
   padding: 96px 0;
-  width: 396px;
-  margin: auto;
+
 }
 .section-team {
   padding: 120px 0;
@@ -1182,7 +1181,6 @@ body {
 
 .container {
   min-width: 320px;
-  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -1242,7 +1240,10 @@ body {
   
 
 }
-
+.address-list {
+ display: flex;
+ justify-content: center;
+}
 
 .menu-container {
   position: fixed;
@@ -1291,7 +1292,6 @@ font-style: normal;
 font-weight: 700;
 line-height: 40px; /* 111.111% */
 letter-spacing: 0.72px;
-text-transform: capitalize;
   
 }
 .mobile-menu-container {
@@ -1302,8 +1302,9 @@ text-transform: capitalize;
 .team-socials-menu {
   display: flex;
   gap: 56px;
-  justify-content: center;
+
   list-style: none;
+  margin-top: 56px;
 }
 .menu-email {
   color: var(--main-text-color);
@@ -1330,6 +1331,10 @@ font-weight: 700;
 line-height: 40px; /* 111.111% */
 letter-spacing: 0.72px;
 text-transform: capitalize;
+}
+
+.container-header-address-list-item {
+  margin-top: 40px;
 }
 
   }
@@ -1386,7 +1391,7 @@ text-transform: capitalize;
   color: var(--slate);
   font-size: 16px;
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.32px;
   word-wrap: break-word;
   box-sizing: content-box;
@@ -1580,8 +1585,56 @@ justify-content: center;
     ),
     url(../images/people-office@2x.jpg);
   }
+  .head-three-tag {
+    color: var(--dark);
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-bottom: 8px;
+    
+  }
 }}
+/* *************** below 320px****************** */
 
+@media screen and (max-width: 428px){
+  .container {
+    width: 320px;
+  }
+  .footer-input-email {
+width: 100%;
+}
+.main-page-section-two {
+  width: 100%;
+}
+.section-team {
+  width: inherit;
+}
+.customers-section {
+  width: inherit;
+  margin: auto;
+}
+.modal-body {
+  padding: 72px 24px 24px 24px;
+  background-color: var(--dairy);
+    max-width: fit-content;
+    min-height: 584px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    display: block;
+    border-radius: 4px;
+    background: #fcfcfc;
+    margin: auto;
+
+  
+  }
+
+}
 
 .link-portfolio-filters:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
