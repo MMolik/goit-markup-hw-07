@@ -429,15 +429,16 @@ h3 {font-family: Roboto;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) 
-  {.section-main {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.section-main {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office@2x.jpg);
-  }
+  }}
 
 .head-first-tag {
   font-size: 36px;
@@ -724,8 +725,6 @@ h3 {font-family: Roboto;
 .customers-section {
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 68px;
-  padding-right: 68px;
 }
 .customers-list-items {
   height: 88px;
@@ -1331,13 +1330,13 @@ font-weight: 700;
 line-height: 40px; /* 111.111% */
 letter-spacing: 0.72px;
 text-transform: capitalize;
-}
+
 
 .container-header-address-list-item {
   margin-top: 40px;
 }
+}
 
-  }
 /*============================ TABLET=============================== */
 @media screen and (min-width: 768px)
   {
@@ -1407,9 +1406,6 @@ text-transform: capitalize;
 .images-section {
   padding-bottom: 120px;
   display: none;
-}
-.section-main {
-  
 }
 .main-page-section-two {
   width: 100%;
@@ -1503,6 +1499,33 @@ justify-content: center;
     gap: 24px;
     margin-bottom: 96px;
   }
+  .section-main {
+    color: #ffffff;
+    padding: 188px 0;
+  
+    margin: auto;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpeg);
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-main {
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
+    }}
 
   }
 /*============================ NOT DESKTOP=============================== */
@@ -1574,17 +1597,35 @@ justify-content: center;
         display: flex;
         margin: auto;
       }
-
+      .section-main {
+        color: #ffffff;
+        padding: 188px 0;
+      
+        margin: auto;
+        background-size: cover;
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/people-office.jpeg);
+      
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
       @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) 
-  {.section-main {
-    background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office@2x.jpg);
-  }
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section-main {
+          background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/people-office@2x.jpg);
+        }}
+      
+     
   .head-three-tag {
     color: var(--dark);
     font-size: 20px;
@@ -1597,7 +1638,7 @@ justify-content: center;
     margin-bottom: 8px;
     
   }
-}}
+}
 /* *************** below 320px****************** */
 
 @media screen and (max-width: 428px){
@@ -1698,22 +1739,6 @@ width: 100%;
 .contact:focus {
   color: #404bbf;
 
-}
-.section-main {
-  color: #ffffff;
-  padding: 188px 0;
-  max-width: 1440px;
-  margin: auto;
-  background-size: cover;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpeg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 
