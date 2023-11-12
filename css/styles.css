@@ -540,8 +540,9 @@ h3 {font-family: Roboto;
   display: none;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  gap:249px;
+  margin: auto;
 }
 .header-cointainer {
   display: flex;
@@ -696,8 +697,6 @@ h3 {font-family: Roboto;
 .customers-section {
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 68px;
-  padding-right: 68px;
 }
 .customers-list-items {
   height: 88px;
