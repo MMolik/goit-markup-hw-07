@@ -1205,7 +1205,7 @@ color: var(--iris);
 }
 .mobile-menu .link {
   display: block;
-  color: var(--dark)
+  color: var(--dark);
   text-decoration: none;
 /* Header 2 */
 font-family: Roboto;
@@ -1214,7 +1214,6 @@ font-style: normal;
 font-weight: 700;
 line-height: 40px; /* 111.111% */
 letter-spacing: 0.72px;
-text-transform: capitalize;
 
 }
 .mobile-menu-container {
@@ -1225,7 +1224,7 @@ text-transform: capitalize;
 .team-socials-menu {
   display: flex;
   gap: 56px;
-  justify-content: center;
+
   list-style: none;
   margin-top: 56px;
 }
@@ -1251,7 +1250,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 40px; /* 111.111% */
 letter-spacing: 0.72px;
-text-transform: capitalize;
+
 
 
 .container-header-address-list-item {
