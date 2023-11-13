@@ -548,7 +548,7 @@ h3 {font-family: Roboto;
   flex-direction: row;
   justify-content: space-between;
   height: 72px;
-  width: auto;
+  width: 100%;
 }
 .customers-logo-list {
   border-radius: 4px;
